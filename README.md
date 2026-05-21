@@ -87,11 +87,11 @@
 <!-- START_PROJECT_LIST -->
 | Проект | Описание | ⭐ Звёзды | 🛠 Язык |
 |--------|----------|-----------|---------|
-| [youtalk](https://github.com/lavren007/youtalk) | YouTalk Сессионное задание по основам frontend-разработки | 0 | — |
-| [HeroesProject](https://github.com/lavren007/HeroesProject) | Heroes Project - Реализация алгоритмов для пошаговой стратегии. | 1 | Java |
+| [youtalk](https://github.com/lavren007/youtalk) | YouTalk Сессионное задание по основам frontend-разработки | 1 | HTML |
 | [wb_parser_bot](https://github.com/lavren007/wb_parser_bot) | Telegram-бот для парсинга отзывов и вопросов с Wildberries. | 1 | Python |
 | [domtut](https://github.com/lavren007/domtut) | Сайт по бронированию жилья в г. Казань | 1 | HTML |
 | [production_bot](https://github.com/lavren007/production_bot) | Telegram-бот для автоматизации рутинных задач, aiogram 3.x | 1 | Python |
+| [moscow_zoo_bot](https://github.com/lavren007/moscow_zoo_bot) | Telegram-бот с викториной, который помогает пользователю узнать своё «тотемно... | 1 | Python |
 <!-- END_PROJECT_LIST -->
 
 ---
