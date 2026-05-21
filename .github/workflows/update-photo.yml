@@ -1,0 +1,31 @@
+name: Update photos.json
+
+on:
+  push:
+    paths:
+      - 'photo/**'
+  workflow_dispatch:
+
+jobs:
+  generate-photos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate photos.json
+        run: |
+          echo '[' > photos.json
+          for img in photo/*.{jpg,jpeg,png,webp}; do
+            if [ -f "$img" ]; then
+              echo "\"$(basename "$img")\"," >> photos.json
+            fi
+          done
+          sed -i '$ s/,$//' photos.json
+          echo ']' >> photos.json
+      - name: Commit and push photos.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "bot@github.com"
+          git add photos.json
+          git diff --staged --quiet || (git commit -m "Обновление галереи фото" && git push)
