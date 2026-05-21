@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title"></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <canvas id="bgStarsCanvas"></canvas>
+    <canvas id="spaceCanvas"></canvas>
+
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <div class="hero-text-overlay" id="heroTextOverlay">
+        <div class="main-title" data-i18n="hero_title"></div>
+        <div class="sub-title">
+            <span class="accent-star"></span> <span data-i18n="hero_welcome"></span> <span class="accent-star"></span>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="content-inner">
+            <div class="section" data-reveal>
+                <div class="section-header">
+                    <span class="label" data-i18n="greeting_label"></span>
+                    <h2 data-i18n="greeting_title"></h2>
+                    <p data-i18n="greeting_desc"></p>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item"><div class="stat-number">5+</div><div class="stat-label" data-i18n="stat1"></div></div>
+                    <div class="stat-item"><div class="stat-number">60+</div><div class="stat-label" data-i18n="stat2"></div></div>
+                    <div class="stat-item"><div class="stat-number">30+</div><div class="stat-label" data-i18n="stat3"></div></div>
+                    <div class="stat-item"><div class="stat-number">∞</div><div class="stat-label" data-i18n="stat4"></div></div>
+                </div>
+            </div>
+
+            <div class="section" data-reveal>
+                <div class="section-header">
+                    <span class="label" data-i18n="services_label"></span>
+                    <h2 data-i18n="services_title"></h2>
+                    <p data-i18n="services_desc"></p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <span class="card-icon"> 🖥️ 🌌 📱</span>
+                        <h3 data-i18n="card1_title"></h3>
+                        <p data-i18n="card1_desc"></p>
+                        <span class="card-tag" data-i18n="card1_tag"></span>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon"> ☕️ 🐍 🗄️</span>
+                        <h3 data-i18n="card2_title"></h3>
+                        <p data-i18n="card2_desc"></p>
+                        <span class="card-tag" data-i18n="card2_tag"></span>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon"> 🛰️ ☁️ 🐳 📦</span>
+                        <h3 data-i18n="card3_title"></h3>
+                        <p data-i18n="card3_desc"></p>
+                        <span class="card-tag" data-i18n="card3_tag"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-reveal>
+                <div class="section-header">
+                    <span class="label" data-i18n="gallery_label"></span>
+                    <h2 data-i18n="gallery_title"></h2>
+                </div>
+                <div class="gallery-grid" id="galleryGrid"></div>
+            </div>
+
+            <div class="section cta-section" data-reveal>
+                <h2 data-i18n="cta_title"></h2>
+                <p data-i18n="cta_desc"></p>
+                <button class="btn btn-primary" id="openFormBtn" data-i18n="cta_btn1"></button>
+                <a href="https://github.com/lavren007" class="btn btn-outline" data-i18n="cta_btn2"></a>
+            </div>
+
+            <div class="footer">
+                <div class="social-links">
+                    <a href="https://t.me/lavrik0904" target="_blank" rel="noopener noreferrer"><img src="images/telegram.svg" alt="Telegram"></a>
+                    <a href="https://instagram.com/ваш_логин" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://vk.ru/id1109062218" target="_blank" rel="noopener noreferrer"><img src="images/vk.svg" alt="VK"></a>
+                    <a href="https://www.linkedin.com/in/anton-l-b99325390" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="mailto:Anton_lavren@mail.ru" target="_blank" rel="noopener noreferrer"><img src="images/mail.svg" alt="Email"></a>
+                </div>
+                <p>🪐 2026 <span>•</span> <span data-i18n="footer_text"></span> <span>•</span> <span data-i18n="footer_rights"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно с формой обратной связи -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="form_title"></h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label data-i18n="form_name_label"></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_phone_label"></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_email_label"></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_task_label"></label>
+                    <textarea id="task" name="task" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-i18n="form_submit_btn"></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Уведомление -->
+    <div id="notification" class="notification"></div>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox" id="closeLightboxBtn">&times;</button>
+            <img id="lightboxImg" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
