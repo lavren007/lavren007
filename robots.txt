@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /lavren007/
+Sitemap: https://lavren007.github.io/lavren007/sitemap.xml
