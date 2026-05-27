@@ -1,3 +1,5 @@
 User-agent: *
-Allow: /lavren007/
-Sitemap: https://lavren007.github.io/lavren007/sitemap.xml
+Allow: /
+
+# Указываем путь к карте сайта
+Sitemap: https://lavlab-it.is-a.dev/sitemap.xml
