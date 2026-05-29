@@ -87,11 +87,11 @@
 <!-- START_PROJECT_LIST -->
 | Проект | Описание | ⭐ Звёзды | 🛠 Язык |
 |--------|----------|-----------|---------|
-| [register](https://github.com/lavren007/register) | Grab your own sweet-looking '.is-a.dev' subdomain. | 0 | JavaScript |
 | [Service_and_AppArchitecture](https://github.com/lavren007/Service_and_AppArchitecture) | Сессионное задание | 1 | — |
 | [youtalk](https://github.com/lavren007/youtalk) | YouTalk Сессионное задание по основам frontend-разработки | 1 | HTML |
 | [wb_parser_bot](https://github.com/lavren007/wb_parser_bot) | Telegram-бот для парсинга отзывов и вопросов с Wildberries. | 1 | Python |
 | [domtut](https://github.com/lavren007/domtut) | Сайт по бронированию жилья в г. Казань | 1 | HTML |
+| [production_bot](https://github.com/lavren007/production_bot) | Telegram-бот для автоматизации рутинных задач, aiogram 3.x | 1 | Python |
 <!-- END_PROJECT_LIST -->
 
 ---
